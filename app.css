@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: #006563;
+}
+
+.header-logo a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.search-bar {
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.search-bar .header-search {
+  color: #006563;
+  font-size: 0.9rem;
+}
+
+.search-bar input {
+  outline: none;
+  border: none;
+  width: 300px;
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
