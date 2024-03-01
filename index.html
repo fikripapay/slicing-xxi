@@ -26,9 +26,10 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <!-- Star Header -->
+    <!-- Start Header -->
     <header>
       <div class="container">
+        <!-- Start Logo -->
         <div class="header-logo">
           <a href="#">
             <img src="img/header/home.png" alt="home img" />
@@ -37,17 +38,21 @@
             <img src="img/header/logo.png" alt="logo img" />
           </a>
         </div>
+        <!-- End logo -->
+        <!-- Start Search -->
         <div class="search-bar">
           <i class="bi bi-search header-search"></i>
           <input type="text" placeholder="Search theater, movies..." />
         </div>
+        <!-- End Search -->
       </div>
     </header>
     <!-- End Header -->
 
-    <!-- Star Navbar -->
+    <!-- Start Navbar -->
     <nav>
       <div class="container">
+        <!-- Start Menu -->
         <div class="menu">
           <a href="#"
             ><span><i class="bi bi-play"></i></span>
@@ -71,19 +76,28 @@
               >Info 21 <i class="bi bi-caret-down-fill"></i></span
           ></a>
         </div>
+        <!-- End Menu -->
+
+        <!-- Start Products -->
         <div class="products">
           <img src="img/navbar/imax-menu.png" alt="imax image" />
           <img src="img/navbar/dolby-menu.png" alt="dolby image" />
           <img src="img/navbar/mtix-menu.png" alt="mtix image" />
         </div>
+        <!-- End Products -->
       </div>
     </nav>
     <!-- End Navbar -->
 
     <!-- Start Hero Section -->
     <section class="hero">
-      <img src="img/hero/1.jpg" alt="play now image" />
+      <div class="slider">
+        <span class="toright"><i class="bi bi-chevron-right"></i></span>
+        <img src="img/hero/1.jpg" alt="hero image" />
+        <span class="toleft"><i class="bi bi-chevron-left"></i></span>
+      </div>
     </section>
     <!-- End Hero Section -->
+    <script src="app.js"></script>
   </body>
 </html>

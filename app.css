@@ -119,11 +119,53 @@ nav {
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: center;
   margin: 20px 0 0;
 }
 
-.hero img {
+.slider {
+  position: relative;
   width: 50%;
+  margin: 0 auto;
+}
+
+.slider span.toright {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: var(--white);
+  display: none;
+}
+
+.slider span.toleft {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: var(--white);
+  display: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider:hover .toright,
+.slider:hover .toleft {
+  display: block;
+  animation: mark 2s;
+}
+
+@keyframes mark {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
